@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+
+    android:layout_height="match_parent"
+    tools:context=".fragment.MyPrescriptionFragment">
+ <androidx.recyclerview.widget.RecyclerView
+     android:id="@+id/recycler_product_prescription"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:focusableInTouchMode="false"
+
+     />
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center"
+     android:gravity="center"
+     android:layout_centerInParent="true"
+     android:id="@+id/layy"
+     android:visibility="gone">
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:text="No Data Found"
+      android:textStyle="bold"
+      android:textSize="16sp">
+
+  </TextView>
+
+ </LinearLayout>
+
+
+
+ <!--   <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        android:background="@color/blue"
+android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white" >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"/>
+
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14"
+                android:layout_width="match_parent"
+                android:text="@string/upload_prescription"
+
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/century_gothic"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+      <ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_constraintLeft_toLeftOf="parent"
+app:layout_constraintRight_toRightOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/toolbar"
+android:layout_marginTop="@dimen/size_50"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/size_20"
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+         android:layout_marginTop="@dimen/size_50"
+        android:gravity="center"
+
+         android:background="@drawable/text_back"
+        android:paddingBottom="@dimen/size_30"
+        android:paddingTop="@dimen/size_30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+android:layout_marginLeft="@dimen/size_40"
+        android:layout_marginRight="@dimen/size_40"
+        >
+    <TextView
+        android:id="@+id/txt_Display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:fontFamily="@font/century_gothic"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/upload_prescription"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_14"
+        android:textStyle="bold"
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:gravity="center"
+
+        android:background="@drawable/ll_bg"
+        android:paddingBottom="@dimen/size_30"
+        android:paddingTop="@dimen/size_30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll1"
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_marginRight="@dimen/size_40"
+        >
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/ic_upload"
+       />
+        <TextView
+            android:id="@+id/txt_up_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload your prescription hre"
+
+            android:fontFamily="@font/century_gothic"
+            android:gravity="center"
+
+            android:textStyle="bold"
+         android:layout_marginTop="@dimen/size_10"
+            android:textColor="@color/text"
+            android:textSize="@dimen/size_12"
+     />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/take_photo"
+            android:textSize="@dimen/size_12"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginLeft="@dimen/size_30"
+            android:layout_marginRight="@dimen/size_30"
+            android:layout_marginBottom="@dimen/size_10"
+            android:fontFamily="@font/century_gothic"
+            android:background="@drawable/btn_back"
+            android:layout_marginTop="@dimen/size_30"
+
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_marginTop="@dimen/size_50"
+
+        android:paddingLeft="@dimen/size_5"
+        android:paddingRight="@dimen/size_10"
+        android:background="@drawable/border_only"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll2"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:gravity="center|left"
+
+        >
+        <TextView
+            android:id="@+id/txt_order_presc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order with prescription"
+           android:paddingLeft="@dimen/size_5"
+            android:fontFamily="@font/century_gothic"
+
+            android:textStyle="bold"
+android:layout_marginBottom="@dimen/size_10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_12"
+            />
+     <TextView
+            android:id="@+id/txt_upload_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload your prescription &amp; we do the rest"
+            android:paddingLeft="@dimen/size_5"
+
+            android:fontFamily="@font/century_gothic"
+
+
+         android:gravity="bottom"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_12"
+            />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/txt_valid_prescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16"
+android:drawableLeft="@drawable/ic_shield"
+        android:drawablePadding="@dimen/size_10"
+        android:gravity="center"
+        android:text="@string/what_is_a_valid_prescription"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_12"
+        app:layout_constraintTop_toBottomOf="@+id/ll3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textStyle="bold"
+        android:fontFamily="@font/century_gothic"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+    <View
+        android:id="@+id/view_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_2"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/size_5"
+        app:layout_constraintTop_toBottomOf="@+id/txt_valid_prescription"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_upload_prescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_prescription"
+        android:textSize="@dimen/size_12"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginLeft="@dimen/size_30"
+        android:layout_marginRight="@dimen/size_30"
+        android:layout_marginBottom="@dimen/size_10"
+        android:fontFamily="@font/century_gothic"
+        android:background="@drawable/btn_back"
+        android:layout_marginTop="@dimen/size_30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_one"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+      </ScrollView>-->
+</RelativeLayout>

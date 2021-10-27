@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_20"
+        android:elevation="@dimen/size_5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+
+
+
+                        <TextView
+                            android:id="@+id/tv_product_name_heading"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_width="0dp"
+                            android:layout_weight=".7"
+                            android:text="Product name"
+                           android:singleLine="true"
+                            android:textSize="@dimen/size_12"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="@dimen/size_3"
+
+                            android:fontFamily="@font/century_gothic"
+
+                            android:layout_height="wrap_content" />
+             <TextView
+                android:id="@+id/tv_product_name"
+                android:textColor="@color/black"
+                android:padding="@dimen/size_5"
+                android:layout_width="0dp"
+                android:text="Paracetamole"
+                 android:layout_weight="1.3"
+                android:singleLine="true"
+                android:textSize="@dimen/size_12"
+                android:gravity="left|center"
+
+                android:fontFamily="@font/century_gothic"
+
+                android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+      android:layout_marginTop="@dimen/size_5"
+            android:weightSum="2"
+            >
+
+   <TextView
+                            android:id="@+id/tv_product_unit_heading"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_width="0dp"
+                            android:layout_weight=".7"
+                            android:text="Unit price"
+                           android:singleLine="true"
+                            android:textSize="@dimen/size_12"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="@dimen/size_3"
+
+                            android:fontFamily="@font/century_gothic"
+
+                            android:layout_height="wrap_content" />
+             <TextView
+                android:id="@+id/tv_unit_price"
+                android:textColor="@color/black"
+                android:padding="@dimen/size_5"
+                android:layout_width="0dp"
+                 android:inputType="number"
+                android:text="$123"
+                 android:layout_weight="1.3"
+                android:singleLine="true"
+                android:textSize="@dimen/size_12"
+                android:gravity="left|center"
+
+                android:fontFamily="@font/century_gothic"
+
+                android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+      android:layout_marginTop="@dimen/size_5"
+            android:weightSum="2"
+            >
+
+   <TextView
+                            android:id="@+id/tv_product_quantity_heading"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_width="0dp"
+                            android:layout_weight=".7"
+                            android:text="Quantity"
+                           android:singleLine="true"
+                            android:textSize="@dimen/size_12"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="@dimen/size_3"
+
+                            android:fontFamily="@font/century_gothic"
+
+                            android:layout_height="wrap_content" />
+             <TextView
+                android:id="@+id/tv_quantity_no"
+                android:textColor="@color/black"
+                android:padding="@dimen/size_5"
+                android:layout_width="0dp"
+                 android:inputType="number"
+                android:text="1"
+                 android:layout_weight="1.3"
+                android:singleLine="true"
+                android:textSize="@dimen/size_12"
+                android:gravity="left|center"
+
+                android:fontFamily="@font/century_gothic"
+
+                android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+            <View
+                android:id="@+id/view_one"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_payment_method"
+                android:layout_marginTop="@dimen/size_5"
+  />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/size_5"
+                android:weightSum="2"
+                >
+
+                <TextView
+                    android:id="@+id/tv_product_subtotal_heading"
+                    android:textColor="@color/black"
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:text="Subtotal"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_12"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="@dimen/size_3"
+
+                    android:fontFamily="@font/century_gothic"
+
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_subtotal_no"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_5"
+                    android:layout_width="0dp"
+                    android:inputType="number"
+                    android:text="$100"
+                    android:layout_weight="1.3"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_12"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/century_gothic"
+
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/size_5"
+                android:weightSum="2"
+                >
+
+                <TextView
+                    android:id="@+id/tv_product_dis_heading"
+                    android:textColor="@color/black"
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:text="Discount"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_12"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="@dimen/size_3"
+
+                    android:fontFamily="@font/century_gothic"
+
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_discount_no"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_5"
+                    android:layout_width="0dp"
+                    android:inputType="number"
+                    android:text="$100.00"
+                    android:layout_weight="1.3"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_12"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/century_gothic"
+
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/size_5"
+                android:weightSum="2"
+                >
+
+                <TextView
+                    android:id="@+id/tv_product_total_heading"
+                    android:textColor="@color/black"
+
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:text="Total"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_12"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="@dimen/size_3"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/century_gothic"
+
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_total_no"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_5"
+                    android:layout_width="0dp"
+                    android:inputType="number"
+                    android:text="$100.00"
+                    android:layout_weight="1.3"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_12"
+                    android:gravity="left|center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/century_gothic"
+
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+                </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

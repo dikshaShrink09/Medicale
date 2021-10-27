@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProfileActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/blue" >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:background="@drawable/back"/>
+
+            <TextView
+                android:textColor="@color/blue"
+                android:textSize="@dimen/size_14"
+                android:layout_width="match_parent"
+                android:text="Edit Profile"
+
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/century_gothic"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/img_cart"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/med_prodcut"/>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout
+        android:id="@+id/fram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+      android:layout_marginTop="@dimen/size_20"
+
+        >
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_myprofile"
+            android:layout_width="@dimen/size_120"
+            android:layout_height="@dimen/size_120"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            app:civ_border_width="5sp"
+            app:civ_border_color="@color/white"
+
+            android:src="@drawable/dwai" />
+
+        <ImageView
+            android:id="@+id/img_add_profile"
+            android:layout_width="@dimen/size_30"
+            android:layout_height="@dimen/size_30"
+            android:src="@drawable/ic_iconfinder_camera_1891018"
+            android:layout_gravity="center|bottom"
+            android:layout_marginLeft="@dimen/size_36"
+            android:layout_marginBottom="@dimen/size_5"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/fram"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_20"
+        >
+        <TextView
+            android:id="@+id/tv_name_heading"
+            android:textColor="@color/gb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="@dimen/size_10"
+            android:gravity="left|center"
+
+            android:fontFamily="@font/century_gothic"
+
+            />
+        <EditText
+            android:id="@+id/tv_name"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manish Sharma"
+            android:layout_marginTop="@dimen/size_5"
+            android:textSize="@dimen/size_12"
+            android:gravity="left|center"
+
+            android:textStyle="bold"
+            android:fontFamily="@font/century_gothic"
+            android:backgroundTint="@null"
+            android:background="@null"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/ll2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_20"
+        >
+        <TextView
+            android:id="@+id/tv_email_heading"
+            android:textColor="@color/gb"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+
+            android:textSize="@dimen/size_10"
+            android:gravity="left|center"
+
+            android:fontFamily="@font/century_gothic"
+
+            />
+        <EditText
+            android:id="@+id/tv_email"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abc@gmail.com"
+            android:layout_marginTop="@dimen/size_5"
+            android:textSize="@dimen/size_12"
+            android:gravity="left|center"
+            android:maxLength="35"
+            android:background="@null"
+
+            android:textStyle="bold"
+            android:fontFamily="@font/century_gothic"
+            android:backgroundTint="@null"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/ll3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_20"
+        >
+        <TextView
+            android:id="@+id/tv_mobile_heading"
+            android:textColor="@color/gb"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile_no"
+
+            android:textSize="@dimen/size_10"
+            android:gravity="left|center"
+
+            android:fontFamily="@font/century_gothic"
+
+            />
+        <EditText
+            android:id="@+id/tv_mobile"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1234567890"
+            android:layout_marginTop="@dimen/size_5"
+            android:textSize="@dimen/size_12"
+            android:gravity="left|center"
+            android:maxLength="10"
+            android:textStyle="bold"
+            android:fontFamily="@font/century_gothic"
+            android:background="@null"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/ll3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical"
+        android:id="@+id/mainprogress">
+        <ProgressBar
+            android:id="@+id/dialog_loading"
+            android:indeterminateDrawable="@drawable/progreass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_centerInParent="true"
+            android:padding="30dp"
+            android:clickable="false"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/ll4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_20"
+        >
+        <TextView
+            android:id="@+id/tv_pin_heading"
+            android:textColor="@color/gb"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pin_code"
+
+            android:textSize="@dimen/size_10"
+            android:gravity="left|center"
+
+            android:fontFamily="@font/century_gothic"
+
+            />
+        <EditText
+            android:id="@+id/tv_pin_code"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="26596xxxx"
+            android:layout_marginTop="@dimen/size_5"
+            android:textSize="@dimen/size_12"
+            android:gravity="left|center"
+            android:maxLength="16"
+            android:textStyle="bold"
+            android:fontFamily="@font/century_gothic"
+            android:background="@null"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll6"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/ll5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_20"
+        >
+        <TextView
+            android:id="@+id/tv_Address_heading"
+            android:textColor="@color/gb"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+
+            android:textSize="@dimen/size_10"
+            android:gravity="left|center"
+
+            android:fontFamily="@font/century_gothic"
+
+            />
+        <EditText
+            android:id="@+id/tv_address"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atulya it park, Indore"
+            android:layout_marginTop="@dimen/size_5"
+            android:textSize="@dimen/size_12"
+            android:gravity="left|center"
+            android:maxLength="250"
+            android:textStyle="bold"
+            android:fontFamily="@font/century_gothic"
+            android:background="@null"
+            />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_update_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update_profile"
+        android:textSize="@dimen/size_12"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginBottom="@dimen/size_20"
+        android:fontFamily="@font/century_gothic"
+        android:background="@drawable/btn_blue_bg_two"
+        android:layout_marginTop="@dimen/size_30"
+        app:layout_constraintTop_toBottomOf="@+id/ll6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

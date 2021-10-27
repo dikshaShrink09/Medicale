@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_20"
+        android:elevation="@dimen/size_5">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+
+                android:layout_weight=".5">
+
+                <ImageView
+                    android:id="@+id/img_video"
+                    android:layout_width="@dimen/size_90"
+                    android:layout_height="@dimen/size_90"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/dwai" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1.3"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/txt_pharmacy_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/century_gothic"
+                    android:singleLine="true"
+                    android:layout_marginLeft="@dimen/size_10"
+
+                    android:text="Shrinkcom Pharmacy"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/txt_pharmacy_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_10"
+
+
+
+                    android:fontFamily="@font/century_gothic"
+                    android:text="Atulya it park, indore "
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_12"
+
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:gravity="center|left"
+                android:orientation="vertical"
+                android:layout_weight=".2"
+                >
+
+
+                <ImageView
+                    android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                   android:background="@drawable/less"
+
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

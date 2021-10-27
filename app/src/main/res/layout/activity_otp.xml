@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".activity.OtpActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/size_40"
+        android:background="@drawable/new_logo_two"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/txt_Display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_30"
+
+        android:fontFamily="@font/century_gothic"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/enter_otp"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/size_20"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        android:layout_marginTop="@dimen/size_30"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_av_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5"
+
+        app:cardUseCompatPadding="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        app:cardCornerRadius="4sp"
+        app:cardElevation="4dp"
+        android:orientation="vertical"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Display_name"
+        app:layout_constraintBottom_toTopOf="@+id/txt_have_an_account"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/size_20"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_marginBottom="@dimen/size_20"
+            >
+            <TextView
+                android:id="@+id/txt_intro_textd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/otp"
+                android:layout_marginLeft="@dimen/size_16"
+                android:layout_marginRight="@dimen/size_16"
+                android:layout_marginBottom="@dimen/size_20"
+                android:fontFamily="@font/century_gothic"
+                android:gravity="center"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/blue"
+                android:textSize="@dimen/size_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_forgot"
+                app:layout_constraintVertical_bias="0.015" />
+            <RelativeLayout
+                android:id="@+id/ll_otp_box"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:layout_marginTop="@dimen/size_20"
+                android:layout_marginBottom="@dimen/size_10"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true">
+                    <com.mukesh.OtpView
+                        android:id="@+id/otp_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="@android:color/black"
+                        app:itemCount="4"
+                        android:gravity="center"
+                        android:theme="@style/OtpWidget.OtpView"
+                        android:clickable="true"
+                        android:cursorVisible="true"
+                        android:autofillHints="0000"
+                        app:hideLineWhenFilled="true"
+                        android:focusable="true"
+                        android:textColorHint="@color/black"
+                        app:lineColor="@color/black"
+                        app:viewType="line"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_reset_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_your_password"
+                android:textSize="@dimen/size_12"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginBottom="@dimen/size_20"
+                android:fontFamily="@font/century_gothic"
+                android:background="@drawable/btn_back"
+                android:layout_marginTop="@dimen/size_30"
+
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/txt_back_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20"
+android:layout_marginBottom="@dimen/size_20"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_12"
+        app:layout_constraintTop_toBottomOf="@+id/card_av_order"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txt_register_now"
+        android:text="@string/back_to_login"
+        android:textStyle="bold"
+        android:fontFamily="@font/century_gothic"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:drawableLeft="@drawable/less"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</LinearLayout>

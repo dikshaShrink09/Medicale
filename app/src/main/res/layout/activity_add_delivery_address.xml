@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddDeliveryAddress">
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50"
+            android:background="@color/blue"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:titleTextColor="@color/white" >
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back"/>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_14"
+                    android:layout_width="match_parent"
+                    android:text="@string/add_address"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/century_gothic"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_20"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name11"
+                android:id="@+id/et_fullname"
+                android:maxLength="90"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_12"
+                android:textStyle="bold"
+                android:fontFamily="@font/century_gothic"
+                >
+
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/street1"
+                android:id="@+id/et_street"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_12"
+                android:textStyle="bold"
+                android:fontFamily="@font/century_gothic"
+                >
+
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/city1"
+                android:id="@+id/et_city"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_12"
+                android:textStyle="bold"
+
+                android:fontFamily="@font/century_gothic"
+                >
+
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/century_gothic"
+                android:textColor="@color/black"
+                android:id="@+id/et_zipcode"
+                android:textSize="@dimen/size_12"
+                android:inputType="phone"
+                android:textStyle="bold"
+
+                android:hint="@string/zipcode1">
+
+            </EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/century_gothic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_12"
+                android:textStyle="bold"
+                android:id="@+id/et_state"
+
+                android:hint="@string/state1">
+
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/century_gothic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_12"
+                android:textStyle="bold"
+                android:id="@+id/et_email"
+
+                android:hint="@string/enter_email">
+
+            </EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/century_gothic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_12"
+                android:inputType="phone"
+                android:textStyle="bold"
+                android:id="@+id/et_phone"
+
+                android:hint="@string/enter_mobile">
+
+            </EditText>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/size_30"
+                android:layout_marginRight="@dimen/size_30"
+                android:layout_marginTop="@dimen/size_20"
+                android:background="@drawable/btn_back"
+                android:text="@string/save"
+                android:id="@+id/btn_save"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_profile"
+    tools:context=".fragment.MyProflieFragment">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_30"
+        android:layout_weight="2"
+        android:layout_marginTop="@dimen/size_20"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+
+        >
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/century_gothic"
+            android:gravity="center"
+            android:padding="@dimen/size_5"
+            android:text="Manish  Sharma"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16"
+            android:textStyle="bold"
+            android:paddingBottom="@dimen/size_5"
+            android:paddingTop="@dimen/size_5"
+            android:textAlignment="textStart"
+            android:singleLine="true"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_myprofile"
+                android:layout_width="@dimen/size_120"
+                android:layout_height="@dimen/size_120"
+                android:layout_gravity="center"
+
+                android:src="@drawable/dwai"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="5sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_30"
+        app:layout_constraintTop_toBottomOf="@+id/ll1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/size_20"
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:padding="@dimen/size_10"
+
+                app:cardCornerRadius="@dimen/size_50"
+
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/size_10"
+                    >
+
+
+                    <ImageView
+
+
+                        android:layout_width="wrap_content"
+
+
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_email_24"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+
+            >
+            <TextView
+                android:id="@+id/tv_name_heading"
+                android:textColor="@color/gb"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+
+                android:textSize="@dimen/size_10"
+                android:gravity="left|center"
+
+                android:fontFamily="@font/century_gothic"
+
+                />
+            <TextView
+                android:id="@+id/tv_username"
+                android:textColor="@color/black"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abc@gmail.com"
+
+                android:textSize="@dimen/size_12"
+                android:gravity="left|center"
+                android:textStyle="bold"
+                android:fontFamily="@font/century_gothic"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_30"
+        app:layout_constraintTop_toBottomOf="@+id/ll2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/size_20"
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:padding="@dimen/size_10"
+
+                app:cardCornerRadius="@dimen/size_50"
+                android:elevation="@dimen/size_5"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/size_10"
+                    >
+
+
+                    <ImageView
+
+
+                        android:layout_width="wrap_content"
+
+
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/call"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+
+            >
+            <TextView
+                android:id="@+id/tv_mobile"
+                android:textColor="@color/gb"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile No."
+
+                android:textSize="@dimen/size_10"
+                android:gravity="left|center"
+
+                android:fontFamily="@font/century_gothic"
+
+                />
+            <TextView
+                android:id="@+id/tv_mobile_no"
+                android:textColor="@color/black"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8561496xxxx"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLength="16"
+                android:textSize="@dimen/size_12"
+                android:gravity="left|center"
+                android:textStyle="bold"
+                android:fontFamily="@font/century_gothic"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_30"
+        app:layout_constraintTop_toBottomOf="@+id/ll3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/size_20"
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:padding="@dimen/size_10"
+
+                app:cardCornerRadius="@dimen/size_50"
+                android:elevation="@dimen/size_5"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/size_10"
+                    >
+
+
+                    <ImageView
+
+
+                        android:layout_width="wrap_content"
+
+
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_pin"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+
+            >
+            <TextView
+                android:id="@+id/tv_pin"
+                android:textColor="@color/gb"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pin_code"
+
+                android:textSize="@dimen/size_10"
+                android:gravity="left|center"
+
+                android:fontFamily="@font/century_gothic"
+
+                />
+            <TextView
+                android:id="@+id/tv_pin_no"
+                android:textColor="@color/black"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="85614"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLength="16"
+                android:textSize="@dimen/size_12"
+                android:gravity="left|center"
+                android:textStyle="bold"
+                android:fontFamily="@font/century_gothic"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_30"
+        app:layout_constraintTop_toBottomOf="@+id/ll4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/size_20"
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:padding="@dimen/size_10"
+
+                app:cardCornerRadius="@dimen/size_50"
+                android:elevation="@dimen/size_5"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/size_10"
+                    >
+
+
+                    <ImageView
+
+
+                        android:layout_width="wrap_content"
+
+
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/house"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+
+            >
+            <TextView
+                android:id="@+id/tv_add_heading"
+                android:textColor="@color/gb"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+
+                android:textSize="@dimen/size_10"
+                android:gravity="left|center"
+
+                android:fontFamily="@font/century_gothic"
+
+                />
+            <TextView
+                android:id="@+id/tv_address"
+                android:textColor="@color/black"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/atulya_it_park_indore"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLength="250"
+                android:textSize="@dimen/size_12"
+                android:gravity="left|center"
+                android:textStyle="bold"
+                android:fontFamily="@font/century_gothic"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_profile"
+        android:textSize="@dimen/size_12"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginBottom="@dimen/size_20"
+        android:fontFamily="@font/century_gothic"
+        android:background="@drawable/btn_blue_bg_two"
+        android:layout_marginTop="@dimen/size_30"
+        app:layout_constraintTop_toBottomOf="@+id/ll5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

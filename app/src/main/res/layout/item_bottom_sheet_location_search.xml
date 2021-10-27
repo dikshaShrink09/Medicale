@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="@dimen/size_120"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:id="@+id/ll1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+ android:layout_marginLeft="@dimen/size_10"
+    android:layout_marginRight="@dimen/size_10"
+    android:layout_marginTop="@dimen/size_10"
+    android:weightSum="1"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:paddingBottom="@dimen/size_7"
+    android:paddingTop="@dimen/size_7"
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+       android:layout_weight=".8"
+        android:textSize="@dimen/size_14"
+        android:fontFamily="@font/century_gothic"
+        android:text="@string/search_location"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+       android:layout_weight=".2"
+        android:gravity="center|right"
+        app:layout_constraintTop_toTopOf="parent"
+    >
+    <ImageView
+        android:id="@+id/img_dismis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/cross"
+        />
+    </LinearLayout>
+</LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_5"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginBottom="@dimen/size_10"
+        android:drawableLeft="@drawable/search"
+        android:fontFamily="@font/century_gothic"
+        android:paddingTop="@dimen/size_5"
+        android:paddingBottom="@dimen/size_5"
+        android:singleLine="true"
+        android:gravity="center|left"
+        android:hint="@string/search"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_14"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/special_perpuse"
+        app:layout_constraintTop_toBottomOf="@+id/ll1"
+        android:drawablePadding="@dimen/size_10"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingRight="@dimen/size_5"
+
+        />
+  <TextView
+        android:id="@+id/txt_current_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/size_5"
+
+        android:layout_marginBottom="@dimen/size_10"
+        android:drawableLeft="@drawable/location_one"
+        android:fontFamily="@font/century_gothic"
+
+        android:singleLine="true"
+        android:gravity="center|left"
+      android:text="@string/use_current_location"
+        android:textColor="@color/red"
+        android:textSize="@dimen/size_14"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/edt_search"
+
+        android:paddingRight="@dimen/size_5"
+
+        />
+
+     <View
+           android:id="@+id/view_one"
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           app:layout_constraintRight_toRightOf="parent"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/txt_current_location"
+           android:background="@color/grey"
+           />
+    <TextView
+        android:id="@+id/txt_saved_heading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".8"
+        android:textSize="@dimen/size_14"
+        android:fontFamily="@font/century_gothic"
+        android:text="@string/recent_location"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/size_10"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_one"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_10"
+        />
+    <TextView
+        android:id="@+id/txt_recent_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/size_10"
+
+        android:layout_marginBottom="@dimen/size_10"
+        android:drawableLeft="@drawable/ic_pin"
+        android:fontFamily="@font/century_gothic"
+        android:layout_marginRight="@dimen/size_16"
+        android:layout_marginLeft="@dimen/size_16"
+        android:singleLine="true"
+        android:gravity="center|left"
+        android:text="@string/use_current_location"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_14"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/txt_saved_heading"
+      android:drawablePadding="@dimen/size_10"
+        android:paddingRight="@dimen/size_5"
+
+        />
+
+    <View
+        android:id="@+id/view_three"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_recent_location"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/size_10"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

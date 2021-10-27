@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.MedicineCategoryActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        android:background="@color/blue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:titleTextColor="@color/white"
+        android:visibility="gone"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"/>
+
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_18"
+                android:layout_width="match_parent"
+                android:text="@string/medicine_category"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/century_gothic"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/img_add_to_cart"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_shopping_bag"
+
+
+                />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+  <!--  <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+
+
+
+
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginBottom="@dimen/size_5"
+        >
+<ImageView
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content"
+    android:background ="@drawable/location_one"
+      android:layout_gravity="left"
+    android:foregroundGravity="center"
+    />
+
+            <EditText
+                android:id="@+id/edt_city_name"
+                android:layout_width="0dp"
+                android:layout_weight=".9"
+                android:layout_height="wrap_content"
+                android:text="@string/indore"
+                android:paddingLeft="@dimen/size_5"
+                android:fontFamily="@font/century_gothic"
+                android:singleLine="true"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_16"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/blue"
+               android:backgroundTintMode="multiply"
+                android:layout_marginRight="@dimen/size_5"
+                android:background="@null"
+
+                />
+
+
+    </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+
+
+
+
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginBottom="@dimen/size_5"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:background ="@drawable/location_one"
+            android:layout_gravity="left"
+            android:foregroundGravity="center"
+            />
+
+        <EditText
+            android:id="@+id/edt_city_name"
+            android:layout_width="0dp"
+            android:layout_weight=".9"
+            android:layout_height="wrap_content"
+            android:text="@string/indore"
+            android:paddingLeft="@dimen/size_5"
+            android:fontFamily="@font/century_gothic"
+            android:singleLine="true"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_16"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/size_5"
+            android:backgroundTint="@null"
+
+            android:background="@drawable/dash_bg"
+
+            />
+
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/txt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_5"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginBottom="@dimen/size_10"
+        android:drawableLeft="@drawable/search"
+        android:fontFamily="@font/century_gothic"
+        android:paddingTop="@dimen/size_5"
+        android:paddingBottom="@dimen/size_5"
+         android:visibility="gone"
+        android:gravity="center|left"
+        android:hint="@string/search"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_14"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/special_perpuse"
+        app:layout_constraintTop_toBottomOf="@+id/ll1"
+        android:drawablePadding="@dimen/size_10"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingRight="@dimen/size_5"
+
+        />
+
+ <TextView
+        android:id="@+id/txt_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginBottom="@dimen/size_10"
+        android:fontFamily="@font/century_gothic"
+        android:paddingTop="@dimen/size_5"
+        android:paddingBottom="@dimen/size_5"
+
+        android:gravity="center|left"
+        android:text="Shop by Category"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_14"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_search"
+
+        android:paddingRight="@dimen/size_5"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_heading"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/layy"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="No Data Found"
+            android:textStyle="bold"
+            android:textSize="16sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

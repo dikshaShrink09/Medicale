@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/size_10"
+    android:layout_marginLeft="@dimen/size_10"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/ll2_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        android:paddingTop="@dimen/size_5"
+        android:paddingBottom="@dimen/size_5"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/size_20"
+            android:layout_height="@dimen/size_20"
+
+            android:background="@drawable/bottom_home" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txt_add_groups"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14"
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:text="@string/atulya_pharmacy"
+            android:textStyle="bold"
+
+            android:layout_marginLeft="@dimen/size_10"
+
+            android:gravity="center_vertical"
+
+            android:layout_height="wrap_content"
+  />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

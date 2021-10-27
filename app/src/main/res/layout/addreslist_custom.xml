@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+
+    android:orientation="vertical"
+    android:layout_marginRight="@dimen/size_5"
+    android:layout_marginLeft="@dimen/size_5"
+    android:layout_marginTop="@dimen/size_5"
+    android:id="@+id/holders"
+    android:layout_marginBottom="@dimen/size_5"
+    android:background="@drawable/edt_border">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/street1"
+            android:fontFamily="@font/century_gothic"
+
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_weight=".5">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:id="@+id/tv_street"
+            android:fontFamily="@font/century_gothic"
+
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_weight=".5">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/size_5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/state1"
+            android:fontFamily="@font/century_gothic"
+
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_weight=".5">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:id="@+id/tv_address"
+            android:fontFamily="@font/century_gothic"
+
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_weight=".5">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/size_5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/zipcode1"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/century_gothic"
+
+            android:textStyle="bold"
+            android:layout_weight=".5">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:id="@+id/tv_code"
+            android:fontFamily="@font/century_gothic"
+
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_weight=".5">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/size_5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/city1"
+            android:fontFamily="@font/century_gothic"
+
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_weight=".5">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:id="@+id/tv_city"
+            android:fontFamily="@font/century_gothic"
+
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_weight=".5">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/size_5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/name11"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/century_gothic"
+
+            android:textStyle="bold"
+            android:layout_weight=".5">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:id="@+id/tv_name"
+            android:fontFamily="@font/century_gothic"
+
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_weight=".5">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/size_5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/email1"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/century_gothic"
+
+            android:layout_weight=".5">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:id="@+id/tv_email"
+            android:fontFamily="@font/century_gothic"
+
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_weight=".5">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignUpActivity"
+    android:background="@drawable/background"
+
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/size_30"
+        android:background="@drawable/new_logo_two"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_av_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:cardUseCompatPadding="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        app:cardCornerRadius="4sp"
+        app:cardElevation="4dp"
+        android:orientation="vertical"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_marginTop="@dimen/size_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintBottom_toTopOf="@+id/txt_have_an_account"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/size_10"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_marginBottom="@dimen/size_20"
+            >
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_20"
+                android:singleLine="true"
+                android:fontFamily="@font/century_gothic"
+                android:inputType="text"
+                android:maxLength="30"
+                android:layout_marginRight="@dimen/size_20"
+
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/size_5"
+                android:background="@drawable/edt_border"
+                android:hint="@string/name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_12"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/size_20"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+   <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_20"
+                android:singleLine="true"
+                android:fontFamily="@font/century_gothic"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:layout_marginRight="@dimen/size_20"
+       android:gravity="center|left"
+       android:paddingLeft="@dimen/size_5"
+
+                android:background="@drawable/edt_border"
+                android:hint="@string/enter_email"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_12"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginTop="@dimen/size_10"
+                />
+   <EditText
+                android:id="@+id/edt_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_20"
+                android:singleLine="true"
+                android:fontFamily="@font/century_gothic"
+                android:inputType="number"
+                android:maxLength="30"
+                android:layout_marginRight="@dimen/size_20"
+
+       android:gravity="center|left"
+       android:paddingLeft="@dimen/size_5"
+                android:background="@drawable/edt_border"
+                android:hint="@string/enter_mobile"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_12"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginTop="@dimen/size_10"
+                />
+
+
+            <EditText
+                android:id="@+id/edt_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+
+                android:fontFamily="@font/century_gothic"
+                android:inputType="textPassword"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:background="@drawable/edt_border"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/size_5"
+                android:hint="@string/enter_password"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_12"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/size_10"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signup"
+                android:textSize="@dimen/size_12"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginBottom="@dimen/size_20"
+                android:fontFamily="@font/century_gothic"
+                android:background="@drawable/btn_back"
+                android:layout_marginTop="@dimen/size_30"
+
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/txt_have_an_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_30"
+
+        android:gravity="center"
+        android:text="@string/allready_have_an_account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_12"
+        app:layout_constraintTop_toBottomOf="@+id/card_av_order"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txt_login_here"
+        android:textStyle="bold"
+        android:fontFamily="@font/century_gothic"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+
+    <TextView
+        android:id="@+id/txt_login_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="@dimen/size_30"
+        android:fontFamily="@font/century_gothic"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/log_in_hre"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_12"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/txt_have_an_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MakePayamentActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        android:background="@color/blue"
+
+
+        app:titleTextColor="@color/white" >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"/>
+
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_14"
+                android:layout_width="match_parent"
+                android:text="Prescription Payment"
+
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/century_gothic"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="false"
+                android:layout_marginTop="@dimen/size_5"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:id="@+id/layy"
+
+
+                android:visibility="gone">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_200"
+                    android:layout_gravity="center"
+                    android:src="@drawable/empty"
+                    android:textStyle="bold"
+                    android:textSize="16sp">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/superr">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_10"
+                android:orientation="vertical"
+                android:layout_weight="1"
+
+
+                >
+                <LinearLayout
+                    android:id="@+id/ll6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:layout_marginTop="@dimen/size_20"
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_heading_subtotal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="@dimen/size_6"
+                        android:layout_weight="1.4"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Sub Total"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_14"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_item_total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="@dimen/size_5"
+                        android:layout_weight=".6"
+                        android:fontFamily="@font/century_gothic"
+                        android:gravity="right"
+                        android:text="26$"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_12"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:visibility="visible"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:layout_marginTop="@dimen/size_5"
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_heading_tax"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="@dimen/size_6"
+                        android:layout_weight="1.4"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Shipping Cost"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_12"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_delivery_charges_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight=".6"
+                        android:gravity="right"
+                        android:layout_marginRight="@dimen/size_5"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="26$"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_12"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:layout_marginTop="@dimen/size_5"
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_headingx"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="@dimen/size_6"
+                        android:layout_weight="1.4"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Discount"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_12"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_delivery_chas_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight=".6"
+                        android:gravity="right"
+                        android:layout_marginRight="@dimen/size_5"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="26$"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_12"
+                        />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:layout_marginBottom="@dimen/size_5"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_marginRight="@dimen/size_20"
+                    />
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:layout_marginTop="@dimen/size_5"
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_heading_paid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="@dimen/size_6"
+                        android:layout_weight="1.4"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="Net Payabale"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/size_14"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight=".6"
+                        android:gravity="right"
+                        android:layout_marginRight="@dimen/size_5"
+                        android:fontFamily="@font/century_gothic"
+                        android:text="52$"
+                        android:textStyle="bold"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/size_12"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_10">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_6"
+                    android:fontFamily="@font/century_gothic"
+                    android:text="@string/apply"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_16"
+
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/edt_coupoen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:singleLine="true"
+                    android:fontFamily="@font/century_gothic"
+                    android:inputType="text"
+                    android:maxLength="90"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/size_5"
+                    android:background="@drawable/edt_border"
+                    android:hint="Apply Coupon"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_12"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/size_20"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:layout_marginBottom="@dimen/size_5">
+                    <TextView
+                        android:id="@+id/tv_apply"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:paddingBottom="@dimen/size_5"
+                        android:paddingTop="@dimen/size_5"
+                        android:layout_marginLeft="@dimen/size_10"
+                        android:fontFamily="@font/century_gothic"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/apply"
+                        android:backgroundTint="@color/red"
+                        android:background="@drawable/btn_blue_bg_two"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_12"
+                        android:textStyle="bold"
+
+
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:paddingBottom="@dimen/size_5"
+                        android:paddingTop="@dimen/size_5"
+                        android:layout_marginLeft="@dimen/size_10"
+                        android:fontFamily="@font/century_gothic"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/remove"
+                        android:backgroundTint="@color/red"
+                        android:background="@drawable/btn_blue_bg_two"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_12"
+                        android:textStyle="bold"
+
+
+
+                        />
+
+
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_re_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/placeorder"
+                    android:textSize="@dimen/size_12"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+
+                    android:foregroundGravity="bottom"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="@dimen/size_20"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:layout_marginBottom="@dimen/size_10"
+                    android:fontFamily="@font/century_gothic"
+                    android:background="@drawable/btn_blue_bg_two"
+                    android:layout_marginTop="@dimen/size_20"
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

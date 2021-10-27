@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_20"
+        android:elevation="@dimen/size_5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_margin="@dimen/size_10"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="10dp"
+
+                  >
+
+                    <ImageView
+                        android:id="@+id/img_video"
+                        android:layout_width="@dimen/size_70"
+                        android:layout_height="@dimen/size_70"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/dwai" />
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left|center"
+                android:layout_weight="1.6"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_pharmacy_name"
+                    android:textColor="@color/black"
+
+                    android:layout_width="match_parent"
+                    android:text="@string/pharmacy_name"
+                   android:singleLine="true"
+                    android:textSize="@dimen/size_12"
+
+                    android:textStyle="bold"
+                    android:fontFamily="@font/century_gothic"
+
+                    android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/tv_pharmacy_add"
+                        android:textColor="@color/gb"
+
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+
+                        android:text="@string/pharmacy_address"
+
+                        android:textSize="@dimen/size_12"
+
+                        android:singleLine="true"
+
+                        android:fontFamily="@font/century_gothic"
+
+                        />
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/size_10"
+                >
+                <TextView
+                    android:id="@+id/tv_total_price"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_5"
+                    android:layout_width="match_parent"
+                    android:text="$788"
+                    android:maxLines="2"
+                    android:textSize="@dimen/size_14"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/century_gothic"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"
+                />
+
+            <TextView
+                android:id="@+id/tv_item_heading"
+                android:textColor="@color/gb"
+
+                android:layout_width="match_parent"
+                android:text="@string/items"
+
+                android:textSize="@dimen/size_12"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/size_10"
+                android:fontFamily="@font/century_gothic"
+
+                android:layout_height="wrap_content" />
+  <TextView
+                android:id="@+id/tv_item_name__withDetail"
+                android:textColor="@color/black"
+
+                android:layout_width="match_parent"
+                android:text="@string/_1_x_paracetamole_2_x_zandubam"
+                android:textStyle="bold"
+                android:maxLines="4"
+                android:textSize="@dimen/size_12"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/size_10"
+                android:fontFamily="@font/century_gothic"
+
+                android:layout_height="wrap_content" />
+   <TextView
+                android:id="@+id/tv_item_ordered_heading"
+                android:textColor="@color/gb"
+                android:layout_marginTop="@dimen/size_5"
+                android:layout_width="match_parent"
+                android:text="@string/ordered_on"
+
+                android:textSize="@dimen/size_12"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/size_10"
+                android:fontFamily="@font/century_gothic"
+
+                android:layout_height="wrap_content" />
+  <TextView
+                android:id="@+id/tv_item_order_date_time"
+                android:textColor="@color/black"
+
+                android:layout_width="match_parent"
+                android:text="25 OCT 2019 at 1:34 am"
+                android:textStyle="bold"
+               android:singleLine="true"
+                android:textSize="@dimen/size_12"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/size_10"
+                android:fontFamily="@font/century_gothic"
+
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"
+                android:layout_marginTop="@dimen/size_5"
+                android:layout_marginBottom="@dimen/size_5"
+                />
+            <TextView
+                android:id="@+id/tv_repeat_order"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:text="@string/repeat_order"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/repeat"
+                android:textSize="@dimen/size_12"
+                android:gravity="right"
+                android:layout_marginLeft="@dimen/size_10"
+                android:fontFamily="@font/century_gothic"
+                android:layout_marginBottom="@dimen/size_5"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

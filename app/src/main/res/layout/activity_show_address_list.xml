@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".activity.ProductActivity">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50"
+            android:background="@color/blue"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:titleTextColor="@color/white" >
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back"/>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_14"
+                    android:layout_width="match_parent"
+                    android:text="@string/show_address"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/century_gothic"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_address"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="500dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addmoree"
+        android:id="@+id/tv_more"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+           android:layout_marginTop="@dimen/size_26"
+        android:layout_gravity="center">
+
+    </TextView>
+
+    <!--  <include
+      app:layout_constraintTop_toBottomOf="@+id/ll2"
+          android:nestedScrollingEnabled="true"
+          android:layout_marginBottom="56dp"
+          layout="@layout/item_bottom_sheet_location_search"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/recycler_product"
+
+          />-->
+</LinearLayout>

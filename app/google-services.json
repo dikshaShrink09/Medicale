@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "325316829375",
+    "project_id": "pharmacyapp-59c7c",
+    "storage_bucket": "pharmacyapp-59c7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325316829375:android:53b7d8528134ed7a87a60a",
+        "android_client_info": {
+          "package_name": "com.shrinkcom.medicale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325316829375-5n51fttf01d9eqbat8ql5dm6vurtkmat.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shrinkcom.medicale",
+            "certificate_hash": "538fbb70584dd95716d1d793a0d8ad4dff47aa7e"
+          }
+        },
+        {
+          "client_id": "325316829375-nfgi09eb46ialido7c23rkkb4llanmhb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwomGomgSf2WbGWceMzGtimDjNZuctkhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325316829375-nfgi09eb46ialido7c23rkkb4llanmhb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

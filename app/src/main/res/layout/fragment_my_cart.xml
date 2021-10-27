@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_weight="2"
+    android:background="@color/white"
+    tools:context=".fragment.MyCartFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_my_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="false"
+         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="170dp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/layy"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_200"
+            android:layout_gravity="center"
+            android:src="@drawable/empty"
+            android:textStyle="bold"
+            android:textSize="16sp">
+
+        </ImageView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+         android:layout_weight="1"
+        android:id="@+id/maincart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+    <LinearLayout
+        android:id="@+id/ll6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_20"
+
+
+        >
+
+        <TextView
+            android:id="@+id/txt_heading_subtotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/size_6"
+            android:layout_weight="1.4"
+            android:fontFamily="@font/century_gothic"
+            android:text="Subtotal "
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_subtotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".6"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/size_5"
+            android:fontFamily="@font/century_gothic"
+            android:text="26$"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_12"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/size_5"
+        android:layout_marginBottom="@dimen/size_5"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_5"
+        >
+
+        <TextView
+            android:id="@+id/txt_heading_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/size_6"
+            android:layout_weight="1.4"
+            android:fontFamily="@font/century_gothic"
+            android:text="TOTAL"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/size_14"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight=".6"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/size_5"
+            android:fontFamily="@font/century_gothic"
+            android:text="52$"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/size_12"
+            />
+
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="@dimen/size_5"
+            android:layout_marginBottom="@dimen/size_5"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+
+            android:gravity="right"
+            android:layout_marginRight="@dimen/size_5"
+            android:fontFamily="@font/century_gothic"
+            android:text="Delivery Address"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/size_14"
+            />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_10"
+
+            >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingLeft="@dimen/size_20"
+             android:id="@+id/et_address"
+             android:visibility="gone"
+             android:hint="+Add Address">
+
+         </TextView>
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_place_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/proceed"
+        android:textSize="@dimen/size_12"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        android:foregroundGravity="bottom"
+        android:textAllCaps="false"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginBottom="@dimen/size_10"
+        android:fontFamily="@font/century_gothic"
+        android:background="@drawable/btn_blue_bg_two"
+        android:layout_marginTop="@dimen/size_20"
+
+        />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

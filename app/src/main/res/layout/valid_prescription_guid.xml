@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/border_only"
+android:paddingBottom="@dimen/size_20"
+    android:layout_margin="@dimen/size_5"
+    >
+
+    <ImageView
+        android:id="@+id/img_cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/cross"
+android:layout_marginTop="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        />
+    <TextView
+        android:id="@+id/txt_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/valid_prescription_guide"
+        android:fontFamily="@font/century_gothic"
+
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_16"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size_10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+
+        />
+    <TextView
+        android:id="@+id/txt_heading_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_clear_image"
+        android:fontFamily="@font/century_gothic"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_12"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/size_60"
+        android:layout_marginTop="@dimen/size_20"
+        app:layout_constraintTop_toBottomOf="@+id/txt_heading"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:drawableLeft="@drawable/ic_shield"
+
+android:drawablePadding="@dimen/size_5"
+        />
+  <TextView
+        android:id="@+id/txt_heading_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doctor_detailse_required"
+        android:fontFamily="@font/century_gothic"
+
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_12"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size_15"
+        app:layout_constraintTop_toBottomOf="@+id/txt_heading_one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="@dimen/size_60"
+        android:drawableLeft="@drawable/ic_shield"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+android:drawablePadding="@dimen/size_5"
+        />
+ <TextView
+        android:id="@+id/txt_heading_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_of_presiscription"
+        android:fontFamily="@font/century_gothic"
+
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_12"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size_15"
+        app:layout_constraintTop_toBottomOf="@+id/txt_heading_two"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:drawableLeft="@drawable/ic_shield"
+        android:layout_marginLeft="@dimen/size_60"
+        android:layout_marginRight="@dimen/size_10"
+android:drawablePadding="@dimen/size_5"
+        />
+ <TextView
+        android:id="@+id/txt_heading_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_detail"
+        android:fontFamily="@font/century_gothic"
+
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_12"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size_15"
+        app:layout_constraintTop_toBottomOf="@+id/txt_heading_three"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:drawableLeft="@drawable/ic_shield"
+        android:layout_marginLeft="@dimen/size_60"
+        android:layout_marginRight="@dimen/size_10"
+android:drawablePadding="@dimen/size_5"
+        />
+    <TextView
+        android:id="@+id/txt_heading_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dosage_details"
+        android:fontFamily="@font/century_gothic"
+
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_12"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size_15"
+        app:layout_constraintTop_toBottomOf="@+id/txt_heading_four"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:drawableLeft="@drawable/ic_shield"
+        android:layout_marginLeft="@dimen/size_60"
+        android:layout_marginRight="@dimen/size_10"
+android:drawablePadding="@dimen/size_5"
+        />
+    <TextView
+        android:id="@+id/txt_heading_six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/how_it_works"
+        android:fontFamily="@font/century_gothic"
+
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_16"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/size_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_heading_five"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+
+        />
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_heading_six"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="@dimen/size_20"
+        >
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+       android:layout_weight="1"
+        >
+        <ImageView
+            android:id="@+id/img_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/ic_notebook"
+   android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_10"
+            />
+        <TextView
+            android:id="@+id/txt_uploade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_prescription_one"
+            android:fontFamily="@font/century_gothic"
+  android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_12"
+
+            android:gravity="center"
+            android:layout_marginTop="@dimen/size_10"
+ />
+    </LinearLayout>
+  <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+       android:layout_weight="1"
+        >
+      <ImageView
+          android:id="@+id/img_receive_notification"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:background="@drawable/notification"
+          android:layout_gravity="center"
+          android:layout_marginTop="@dimen/size_10"
+          />
+      <TextView
+          android:id="@+id/txt_receivwe"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/received_notification"
+          android:fontFamily="@font/century_gothic"
+
+          android:textColor="@color/black"
+          android:textSize="@dimen/size_12"
+
+          android:gravity="center"
+          android:layout_marginTop="@dimen/size_10"
+          />
+    </LinearLayout>
+  <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+       android:layout_weight="1"
+        >
+      <ImageView
+          android:id="@+id/img_medicine"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:background="@drawable/ic_camera"
+          android:layout_gravity="center"
+          android:layout_marginTop="@dimen/size_10"
+          />
+      <TextView
+          android:id="@+id/txt_medicine"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/medicine_at_your_doorstep"
+          android:fontFamily="@font/century_gothic"
+
+          android:textColor="@color/black"
+          android:textSize="@dimen/size_12"
+
+          android:gravity="center"
+          android:layout_marginTop="@dimen/size_10"
+          />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

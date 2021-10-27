@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dash"
+            android:icon="@drawable/ic_med_home"
+            android:title="@string/home"/>
+        <item
+            android:id="@+id/nav_My_order"
+            android:icon="@drawable/med_prodcut"
+            android:title="@string/my_order"/>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/med_profile"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/med_support"
+            android:title="@string/support" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/order_history"
+            android:title="@string/order_history" />
+
+        <item
+            android:id="@+id/nav_changepassword"
+            android:icon="@drawable/order_history"
+            android:title="@string/change_password" />
+        <item
+            android:id="@+id/nav_wish"
+            android:icon="@drawable/ic_love_letter"
+            android:title="@string/wish_list" />
+
+        <item
+            android:id="@+id/nav_languagechange"
+            android:icon="@drawable/earthglobe"
+            android:title="@string/changelanguage" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/med_logout"
+            android:title="@string/logout" />
+
+
+    </group>
+</menu>

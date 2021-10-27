@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">مقابل</string>
+    <string name="title_activity_login">تسجيل الدخول</string>
+    <string name="prompt_email">بريد إلكتروني</string>
+
+    <string name="otp">تم إرسال كلمة المرور لمرة واحدة (OTP) إلى معرف البريد الخاص بك يرجى إدخالها هنا لإعادة تعيين كلمة المرور الخاصة بك
+</string>
+    <string name="prompt_password">كلمه السر</string>
+    <string name="action_sign_in">تسجيل الدخول أو التسجيل</string>
+    <string name="action_sign_in_short">تسجيل الدخول</string>
+
+    <string name="unpaid">غير مدفوعة</string>
+    <string name="paid">مدفوع</string>
+    <string name="welcome">"مرحبا !"</string>
+    <string name="contactus">اتصل بنا.
+</string>
+
+    <string name="invalid_username">اسم مستخدم غير صالح</string>
+    <string name="invalid_password">يجب أن تكون كلمة المرور> 5 أحرف
+</string>
+    <string name="login_failed">"فشل عملية الدخول"</string>
+    <string name="next">التالي</string>
+    <string name="start">فهمتك</string>
+    <string name="upload_your_precription">قم بتحميل الوصفة الطبية الخاصة بك
+</string>
+    <string name="just_simple_click_to_upload">مجرد نقرة بسيطة للتحميل</string>
+    <string name="order_your_otc_products">اطلب منتجات OTC الخاصة بك</string>
+    <string name="signup">اشتراك</string>
+    <string name="log_in_hre">تسجيل الدخول هنا</string>
+    <string name="name">اسم</string>
+    <string name="allready_have_an_account">هل لديك حساب؟</string>
+    <string name="don_t_have_an_account">ليس لديك حساب؟</string>
+    <string name="register_now"><u>سجل الان</u></string>
+    <string name="log_in">تسجيل الدخول</string>
+    <string name="addmoree">أضف المزيد</string>
+    <string name="forgot_password">هل نسيت كلمة السر
+</string>
+    <string name="enter_email">أدخل البريد الإلكتروني</string>
+    <string name="back_to_login"><u>العودة إلى تسجيل الدخول
+</u></string>
+    <string name="back_to_home"><u>العودة إلى المنزل
+</u></string>
+    <string name="please_enter_your_mail_id_to_recover_your_password">الرجاء إدخال معرف البريد الخاص بك لاستعادة كلمة المرور الخاصة بك
+</string>
+    <string name="enter_otp">أدخل OTP</string>
+    <string name="enter_password">أدخل كلمة المرور
+</string>
+    <string name="enter_new_password">أدخل كلمة مرور جديدة
+</string>
+    <string name="enter_old_password">أدخل كلمة المرور القديمة</string>
+    <string name="confirm">أدخل كلمة المرور القديمة</string>
+    <string name="reset_your_password">اعد ضبط كلمه السر</string>
+    <string name="change_your_password">غير كلمة المرور الخاصة بك</string>
+    <string name="submit">إرسال</string>
+    <string name="dashboard">لوحة القيادة</string>
+    <string name="my_products">منتجاتي</string>
+    <string name="my_prescriptions">الوصفات الطبية الخاصة بي</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">مرحبا جزء فارغ</string>
+    <string name="upload_prescription">تحميل الوصفة الطبية</string>
+    <string name="upload_prescription_one">تحميل \ n الوصفة</string>
+    <string name="take_photo">تصوير</string>
+    <string name="upload_your_prescription_hre">تحميل ساعة الوصفة الخاصة بك</string>
+    <string name="what_is_a_valid_prescription">ما هي الوصفة الطبية الصحيحة؟</string>
+    <string name="shipping">أضف عنوان الشحن</string>
+
+    <string name="fullname">أدخل الاسم الكامل</string>
+    <string name="name11"> الاسم بالكامل :</string>
+    <string name="street">أدخل اسم الشارع</string>
+    <string name="street1"> اسم الشارع :</string>
+    <string name="city">أدخل اسم المدينة</string>
+    <string name="city1"> اسم المدينة :</string>
+    <string name="zipcode">أدخل الرمز البريدي</string>
+    <string name="zipcode1"> الرمز البريدي :</string>
+    <string name="state">إدخال الدولة</string>
+    <string name="state1"> اسم الولاية :</string>
+    <string name="email11">أدخل البريد الإلكتروني</string>
+    <string name="email1"> بريد إلكتروني :</string>
+    <string name="phone">أدخل رقم الهاتف</string>
+
+    <string name="logout">تسجيل خروج</string>
+    <string name="changelanguage">تغيير اللغة</string>
+    <string name="english">الإنجليزية</string>
+    <string name="arabic">عربى</string>
+    <string name="selectedlanguage">اختر اللغة</string>
+
+    <string name="navigation_drawer_open">افتح درج التنقل</string>
+    <string name="navigation_drawer_close">أغلق درج التنقل</string>
+
+
+
+
+    <string name="pending">قيد الانتظار</string>
+    <string name="confirm1">يتأكد</string>
+    <string name="readytoshift">جاهز للتحويل</string>
+    <string name="cancelledbyyou">ألغيت من قبلك</string>
+    <string name="rejectedbypharmacy">رفضته الصيدلية</string>
+    <string name="readytodispatch">جاهز للإرسال</string>
+    <string name="dispatched">أرسل</string>
+    <string name="intransit">في مرحلة انتقالية</string>
+
+
+    <string name="indore">إندور</string>
+    <string name="deliver_to">يسلم إلى</string>
+    <string name="pharmacy">مقابل</string>
+    <string name="buy_otc_product">شراء منتج OTC</string>
+    <string name="shop_by_category">تسوق حسب الاقسام</string>
+    <string name="view_all">مشاهدة الكل</string>
+    <string name="home">منزل، بيت</string>
+    <string name="prescription">روشتة</string>
+    <string name="medicine">طب</string>
+    <string name="notification">تنبيه</string>
+    <string name="setting">جلسة</string>
+    <string name="upload_a_picture_of_your_prescription">قم بتحميل صورة من الوصفة الطبية الخاصة بك</string>
+    <string name="get_a_confirmation">احصل على تأكيد</string>
+    <string name="make_payment">قم بالدفع</string>
+    <string name="placeorder">مكان الامر</string>
+    <string name="cancel">الغاء الطلب</string>
+    <string name="remove">إزالة </string>
+    <string name="valid_prescription_guide">دليل وصفة طبية ساري المفعول</string>
+    <string name="upload_clear_image">تحميل صورة واضحة</string>
+    <string name="doctor_detailse_required">مطلوب تفاصيل الطبيب</string>
+    <string name="date_of_presiscription">تاريخ الوصفة</string>
+    <string name="patient_detail">تفاصيل المريض</string>
+    <string name="dosage_details">تفاصيل الجرعة</string>
+    <string name="how_it_works">كيف تعمل</string>
+    <string name="received_notification">تلقي \ n إعلام</string>
+    <string name="medicine_at_your_doorstep">الطب على عتبة داركم</string>
+    <string name="product">منتج</string>
+    <string name="physiotherapy_rehabiutation">العلاج الطبيعي / إعادة التأهيل</string>
+    <string name="_200">₹ 200</string>
+    <string name="_100">₹ 100</string>
+    <string name="how_to_order_medicines_on_doktoreoman_it_s_simple">كيف تطلب الأدوية من DoktoreOman؟ انه سهل.</string>
+    <string name="chuck_taylor_all_star_leather">حذاء تشاك تايلور اول ستار ليذر</string>
+    <string name="the_converse_chuck_taylore_all_star_leather_sneaker_add_a_rich_n_textured_leather_upper_onto_the_world_s_most_iconic_hight">
+       يضيف حذاء كونفرس تشاك تايلور أول ستار الجلدي الغني \ n الجزء العلوي المصنوع من الجلد المحكم إلى أكثر الأيقونات شهرة في العالم
+.</string>
+    <string name="total_ammount">إجمالي \ n المبلغ</string>
+    <string name="search">بحث</string>
+    <string name="my_order">طلبي</string>
+    <string name="prescription_uploaded_successfully">تم تحميل الوصفة بنجاح!</string>
+    <string name="cannotadd">لا يمكن إضافة منتج من صيدلية مختلفة. هل تريد إزالة جميع المنتجات الأخرى وإضافتها إلى عربة التسوق؟
+</string>
+    <string name="success_your_order_has_been_requested_successfully_please_track_the_status_in_my_prescription">نجاح ! تم طلب طلبك بنجاح. يرجى تتبع الحالة في وصفتي
+</string>
+    <string name="ok">نعم
+</string>
+    <string name="order_id">رقم التعريف الخاص بالطلب:</string>
+    <string name="_25_08_2021">25/08/2021</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="support">الدعم</string>
+    <string name="otc_product">منتج بدون وصفة طبية</string>
+    <string name="medicine_category">فئة الطب</string>
+    <string name="email_valid">يجب أن يتكون البريد الإلكتروني من 4 إلى 30 حرفًا</string>
+    <string name="email_valid_two">فقط . و @ الأحرف المسموح بها</string>
+    <string name="email_valid_three">يجب أن يحتوي البريد الإلكتروني على @ و.</string>
+    <string name="pass_valid">يجب أن تتكون كلمة المرور من 4 إلى 20 حرفًا</string>
+    <string name="name_please">يرجى إدخال اسمك</string>
+    <string name="enter_mobile">الرجاء إدخال رقم جوال صالح</string>
+    <string name="enter_pass">أدخل كلمة المرور</string>
+    <string name="register_success">نجح الإنقاذ</string>
+    <string name="atulya_pharmacy">صيدلية أتوليا</string>
+    <string name="search_location">موقع البحث</string>
+    <string name="use_current_location">استخدام الموقع الحالي</string>
+    <string name="recent_location">الموقع الأخير</string>
+    <string name="my_cart">عربة التسوق الخاصة بي</string>
+    <string name="_141_rating_amp_564_review"><![CDATA[141 Rating & 564 Review]]></string>
+    <string name="sale_price">سعر البيع</string>
+    <string name="Manish">رجولي ... يتصف بالرجولة</string>
+    <string name="email">بريد إلكتروني</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="mobile_no">رقم المحمول.</string>
+    <string name="update_profile">تحديث الملف</string>
+    <string name="order_history">تاريخ الطلب</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="add_new_address">أضف عنوان جديد</string>
+    <string name="delivery_time_and_date">وقت التسليم والتاريخ</string>
+    <string name="_12_15pm">12:15pm</string>
+    <string name="jan_09_2022">jan 09,2022</string>
+
+    <string name="product_name">اسم المنتج</string>
+
+    <string name="atulya_it_park_indore">أتوليا إت بارك ، إندور</string>
+    <string name="pin_code">الرقم السري</string>
+    <string name="address">عنوان</string>
+    <string name="contact_no">رقم الاتصال.</string>
+    <string name="need_help">تحتاج مساعدة</string>
+    <string name="pharmacy_address">عنوان الصيدلية</string>
+    <string name="pharmacy_name">اسم الصيدلية</string>
+    <string name="ordered_on">تم طلبه في</string>
+    <string name="items">العناصر</string>
+    <string name="_1_x_paracetamole_2_x_zandubam">1 × باراسيتامول ، 2 × زاندوبام</string>
+    <string name="repeat_order">اعد الامر</string>
+    <string name="place_order">مكان الامر</string>
+    <string name="proceed">تقدم</string>
+    <string name="delivered">تم التوصيل</string>
+    <string name="delivered_to">سلمت ل</string>
+    <string name="item_total">مجموع الاشياء</string>
+    <string name="delivery_charges">رسوم التوصيل</string>
+    <string name="re_order">إعادة الطلب</string>
+    <string name="upload_your_prescription">قم بتحميل الوصفة الطبية الخاصة بك</string>
+    <string name="selected_category_name">اسم الفئة المحدد</string>
+    <string name="select_pharmacy">اختر الصيدلة</string>
+    <string name="select_product">حدد المنتج</string>
+    <string name="show_address">إظهار قائمة العناوين</string>
+    <string name="save">يحفظ </string>
+    <string name="debit">بطاقة ائتمان</string>
+    <string name="cod">الدفع عند الاستلام</string>
+    <string name="choose">اختر وسيلة الدفع</string>
+    <string name="apply">تطبيق القسيمة</string>
+    <string name="add_address">اضف عنوان</string>
+    <string name="addresslist">قائمة العناوين</string>
+    <string name="read_more">اقرأ أكثر...</string>
+    <string name="add_to_cart">أضف إلى السلة</string>
+    <string name="wish_list">قائمة الرغبات</string>
+    <string name="quantity">كمية</string>
+    <string name="sort">ترتيب حسب</string>
+    <string name="disease_category">فئة المرض</string>
+
+    <string name="using_gallery">باستخدام المعرض</string>
+    <string name="picture_selector">حدد صورة</string>
+    <string name="using_camera">باستخدام الكاميرا</string>
+
+    <string name="order_place">تم تقديم الطلب بنجاح!</string>
+
+
+    <string name="search_by">ترتيب حسب</string>
+
+
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="alert">يحذر</string>
+    <string name="check_internet">الخادم لا يستجيب! تحقق من اتصالك بالإنترنت ...
+</string>
+
+
+</resources>

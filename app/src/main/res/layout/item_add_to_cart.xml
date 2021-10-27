@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginBottom="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_20"
+        android:elevation="@dimen/size_5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+         <LinearLayout
+            android:layout_width="0dp"
+             android:layout_weight=".7"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_margin="@dimen/size_10"
+            >
+
+             <ImageView
+                 android:id="@+id/img_product_image"
+                 android:layout_alignParentLeft="true"
+                 android:layout_width="@dimen/size_80"
+
+                 android:layout_height="@dimen/size_80"
+                 android:src="@drawable/dwai"/>
+
+         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+       android:layout_gravity="center"
+            android:layout_weight="1.6"
+
+            >
+
+                <TextView
+                    android:id="@+id/tv_product_name"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/size_5"
+                    android:layout_width="match_parent"
+                    android:text="Product name"
+                    android:maxLines="2"
+                    android:textSize="@dimen/size_14"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/century_gothic"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="3"
+                android:layout_marginTop="@dimen/size_5"
+
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+
+                    android:layout_marginLeft="@dimen/size_5"
+                    >
+                    <TextView
+                        android:id="@+id/tv_minus"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+
+                        android:background="@drawable/minus"
+
+                        android:gravity="center"
+                        android:textStyle="bold"
+
+                        android:fontFamily="@font/century_gothic"
+                        android:layout_centerInParent="true"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_no_of_product"
+                    android:textColor="@color/black"
+                    android:background="@drawable/bg_normal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="1"
+
+                    android:textSize="@dimen/size_16"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:fontFamily="@font/century_gothic"
+                    android:layout_centerInParent="true"
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="left"
+
+                    android:layout_marginLeft="@dimen/size_5"
+                    >
+                    <TextView
+                        android:id="@+id/tv_plus"
+                        android:textColor="@color/black"
+
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+
+
+                        android:background="@drawable/plus"
+
+                        android:gravity="center"
+                        android:textStyle="bold"
+
+                        android:fontFamily="@font/century_gothic"
+                        android:layout_centerInParent="true"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+android:layout_gravity="center"
+            android:layout_margin="@dimen/size_10"
+            >
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:textColor="@color/black"
+                android:padding="@dimen/size_5"
+                android:layout_width="match_parent"
+                android:text="$788"
+                android:maxLines="2"
+                android:textSize="@dimen/size_14"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/century_gothic"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/iv_delete_cart"
+                android:layout_marginTop="@dimen/size_5"
+                android:src="@drawable/ic_baseline_delete_24">
+
+            </ImageView>
+
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>

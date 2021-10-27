@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+
+    android:layout_margin="@dimen/size_5"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:cardCornerRadius="@dimen/size_3"
+        android:elevation="4dp"
+        card_view:cardUseCompatPadding="true"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+
+        >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:background="@drawable/product_border"
+    >
+        <ImageView
+            android:id="@+id/img_unselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/ic_heart"
+            android:layout_marginTop="@dimen/size_5"
+            android:layout_marginRight="@dimen/size_5"
+            />
+    <ImageView
+            android:id="@+id/img_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+          app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/like_red"
+            android:layout_marginTop="@dimen/size_5"
+            android:layout_marginRight="@dimen/size_5"
+            />
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+        android:layout_marginTop="@dimen/size_10"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+
+        >
+        <ImageView
+            android:id="@+id/category_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_gravity="center"
+            android:src="@drawable/category_image"
+
+            android:padding="@dimen/size_10"
+
+            />
+    </LinearLayout>
+
+
+
+<LinearLayout
+    android:id="@+id/ll23"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginStart="@dimen/size_5"
+    android:layout_marginEnd="@dimen/size_5"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    app:layout_constraintTop_toBottomOf="@+id/ll1"
+    >
+    <TextView
+        android:id="@+id/txt_product_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+android:layout_weight="1.6"
+
+        android:fontFamily="@font/century_gothic"
+        android:gravity="left"
+        android:layout_gravity="left"
+        android:text="PHYSIOTHERAPY REHABIUTATION"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/size_12"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/size_2"
+
+
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll1"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+
+        />
+    <TextView
+        android:id="@+id/txt_rate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".4"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/size_10"
+
+        android:fontFamily="@font/century_gothic"
+        android:gravity="right|center"
+
+
+        android:singleLine="true"
+        android:text="$ 23"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/size_12"
+        android:textStyle="bold"
+
+      />
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/txt_add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+
+
+        android:fontFamily="@font/century_gothic"
+        android:gravity="center"
+        android:background="@color/red"
+        android:paddingTop="@dimen/size_5"
+        android:paddingBottom="@dimen/size_5"
+        android:singleLine="true"
+        android:text="Add to cart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_12"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll23"
+        />
+
+    <!--  <TextView
+          android:id="@+id/txt_rate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+
+          android:fontFamily="@font/century_gothic"
+          android:gravity="left"
+          android:layout_gravity="left"
+          android:foregroundGravity="left"
+          android:text="@string/_100"
+          android:textColor="@color/blue"
+          android:textSize="@dimen/size_12"
+          android:textStyle="bold"
+          android:singleLine="true"
+
+
+
+         app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/txt_product_name"
+          app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/size_10"
+
+          />-->
+   <!-- <TextView
+        android:id="@+id/txt_offer_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:fontFamily="@font/century_gothic"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/_200"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_12"
+        android:textStyle="bold"
+
+        android:layout_marginBottom="@dimen/size_10"
+        android:maxLines="1"
+        android:maxWidth="@dimen/size_60"
+        android:textAlignment="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_product_name"
+        android:layout_marginRight="@dimen/size_20"
+
+
+        />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
